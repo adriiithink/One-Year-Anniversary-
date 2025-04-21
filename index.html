@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>To My Love, On Our One Year Together</title>
+  <style>
+    body {
+      font-family: 'Comic Sans MS', cursive, sans-serif;
+      background: linear-gradient(to bottom right, #ffe4ec, #dbeaff);
+      color: #4a4a4a;
+      padding: 20px;
+      margin: 0;
+    }
+    .container {
+      max-width: 600px;
+      margin: auto;
+      background: white;
+      border-radius: 20px;
+      padding: 20px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+    }
+    h1, h2 {
+      color: #ff80ab;
+      text-align: center;
+    }
+    .timeline {
+      margin-top: 20px;
+    }
+    .event {
+      margin-bottom: 15px;
+      padding: 10px;
+      background: #fce4ec;
+      border-left: 4px solid #ff80ab;
+      border-radius: 10px;
+    }
+    .hidden-section {
+      display: none;
+      margin-top: 20px;
+      background: #e8f0fe;
+      padding: 15px;
+      border-radius: 10px;
+    }
+    input[type='password'] {
+      padding: 10px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+      width: 70%;
+    }
+    button {
+      padding: 10px 15px;
+      margin-left: 10px;
+      border: none;
+      border-radius: 5px;
+      background-color: #ff80ab;
+      color: white;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #ff5e99;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>To My Love, On Our One Year Together</h1>
+    <p style="text-align:center">Happy 1-Year Anniversary, my love!</p>
+
+    <h2>Our Timeline</h2>
+    <div class="timeline">
+      <div class="event">12/01/2024 = Our First Meet on Chitchat</div>
+      <div class="event">28/04/2024 = At what age you see me as a boyfriend? (now tf? 🤨)</div>
+      <div class="event">aNy wAy yOU cAN cOmpErmisSe? (🫩)</div>
+      <div class="event">thE aNsWer is mosTlY nO sO I donT wAnna asKasIDonTwanTToLosEyOu.( Pussy. 💝)</div>
+      <div class="event">28/04/25 = ONE YEAR ANNIVERSARY YAAAAAYYYYYYYY 💞💖💗💞💗💗💝</div>
+    </div>
+
+    <h2>Enter Password to Unlock a Message</h2>
+    <input type="password" id="password" placeholder="Enter password...">
+    <button onclick="checkPassword()">Unlock</button>
+
+    <div class="hidden-section" id="secret">
+      <p>
+        My love, it's almost been an year huh? I can't believe it's already been a whole year of us growing, laughing, loving, and making memories together.
+        You've brought so much joy, comfort, and meaning into my life. Thank you for being understanding, patient, kind, and for loving me the way you do.
+        I’m so proud of how far we've come together and I’m even more excited for everything that’s still to come.
+      </p>
+      <p>
+        A lot of things changed between us, a lot of fights, a lot of misunderstandings. There's probably more to come.
+        Please let's stick strong together okay? (Well if you don't I'm running you over 🥰)
+      </p>
+      <p style="font-weight: bold">
+        I KNOW WE'LL MAKE MORE MEMORIES TOGETHER UNTIL WE DIE.
+        SO HERE'S TO OUR ONE YEAR ANNIVERSARY, I'LL LOVE YOU FOREVER AND EVER. 💞💖💗💝💕
+      </p>
+    </div>
+  </div>
+
+  <script>
+    function checkPassword() {
+      const input = document.getElementById('password').value;
+      const secret = document.getElementById('secret');
+      if (input === 'ilovecats1402') {
+        secret.style.display = 'block';
+      } else {
+        alert('Wrong password, try again!');
+      }
+    }
+  </script>
+</body>
+</html>
